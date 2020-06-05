@@ -17,17 +17,16 @@
 
 <body>
   <div>
-    <div onclick="Disp()" class="DispButton">表示</div>
-    <div onclick="Delete()" class="DeleteButton">削除</div>
+  <div onclick="Disp()" class="DispButton">表示</div>
+  <div onclick="Delete()" class="DeleteButton">削除</div>
   </div>
   <div id="MenuArea" class="MenuArea">
     <!--他メニューの親-->
     <div class="MenuParent"></div>
-
-  </div>
-  <div class="HolizonScrollParent">
-    <div class="ScrollNav">
-      <ul id="ScrollParent"></ul>
+    <div class="HolizonScrollParent">
+      <div class="ScrollNav">
+        <ul id="ScrollParent"></ul>
+      </div>
     </div>
   </div>
   </div>
@@ -46,7 +45,7 @@
       $(".HolizonScrollParent").show();
     }
 
-    function Delete() {
+    function Delete(){
       $("#ScrollParent").empty();
       $(".HolizonScrollParent").hide();
     }
