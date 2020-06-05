@@ -1,0 +1,20 @@
+
+/*ヘッダー下部罫線*/
+.Boarder{
+    margin: 0%;
+    padding: 0%;
+    height: 2px;
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX( -50%);
+
+}
+
+/*パンくずの親要素*/
+.BreadCrumb{
+   position: absolute;
+   bottom: 3px;
+   padding-left: 3vw;
+}

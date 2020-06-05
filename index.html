@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+  <!--cache設定-->
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <script src="./js/common/jq/jquery-3.5.0.js"></script>
+  <script src="./js/myjs/dataManager.js?DATE=20200528"></script>
+  <script src="./js/myjs/selectCSS.js?DATE=20200529"></script>
+
+  <link rel="stylesheet" type="text/css" href="./css/main.css" media="screen" />
+</head>
+
+<body>
+  <div>
+  <div onclick="Disp()" class="DispButton">表示</div>
+  <div onclick="Delete()" class="DeleteButton">削除</div>
+  </div>
+  <div id="MenuArea" class="MenuArea">
+    <!--他メニューの親-->
+    <div class="MenuParent"></div>
+    <div class="HolizonScrollParent">
+      <div class="ScrollNav">
+        <ul id="ScrollParent"></ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script>
+
+    // 表示 ここで作成
+    function Disp() {
+      // 
+      let addEle = "";
+      for (let index = 0; index < 6; index++) {
+        addEle += '<li class="SlickElement"><img class="SlickElementImg" src="./img/kitchen/1.png"></li>';
+      }
+      // 追加
+      $("#ScrollParent").append(addEle);
+      $(".HolizonScrollParent").show();
+    }
+
+    function Delete(){
+      $("#ScrollParent").empty();
+      $(".HolizonScrollParent").hide();
+    }
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+.content {
+  margin: 0 auto;
+  padding: 40px;
+}
+.modal {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.modal__bg {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+.modal__content {
+  background: #fff;
+  left: 50%;
+  padding: 0px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  overflow: scroll;
+}
+
+.modal__content_item_select {
+  background: #fff;
+  left: 50%;
+  padding: 0px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: auto;
+}
+
+.itembanner {
+  width: 100%;
+  height: 100px;
+  float: left;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 2px;
+}
+
+.icon {
+  width: auto;
+  height: 100%;
+  float: left;
+}
+
+.iconimg {
+  max-width: 100%;
+  height: 100%;
+  float: left;
+}
+
+.ItemName {
+  height: 20px;
+  padding: 10px;
+}
+
+.ItemNameArea {
+  display: block;
+  float: left;
+  width: 55%;
+  height: 100%;
+}
+
+.itemselectbanner {
+  width: 100%;
+  height: 50px;
+  float: left;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 2px;
+}
+
+.CloseButton {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0%;
+  right: 0%;
+  transform: translate(50%, -50%);
+}
+
+.modal_menu {
+  background: #fff;
+  left: 50%;
+  padding: 0px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: auto;
+}
+
+.modal_video{
+  margin: 0%;
+  padding: 0px;
+  position: absolute;
+  width: 100%;
+  height: 60%;
+}
+
+.SNSArea{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0%;
+}
+
+.SNSIconArea{
+    height: 30px;
+    width: auto;
+    padding: 20px 10px;
+    margin: 0%;
+}
+
+.SNSIconArea img{
+    float: left;
+    height: 100%;
+    width: auto;
+    padding-right: 5px;
+    margin: 0%;
+}
+
+.SNSText{
+    clear: both;
+    position: absolute;
+    top:50%;
+    right: 0%;
+    padding: 10px;
+    transform: translateY(-50%);
+}
+
+.MenuSelectBanner {
+  width: 100%;
+  height: 50px;
+  float: left;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 2px;
+}
+
+.SNSSelectBanner {
+  width: 100%;
+  height: 70px;
+  float: left;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 2px;
+}
+
+
+
+/*動画ページ関連*/
+.VideoArea{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0%;
+
+}
+
+.VideoHader{
+  width: 100%;
+  height: 5vh;
+  position: relative;
+  background-color: #f9f6f4;
+}
+
+.VideoCloseButton{
+  padding: auto;
+  position: absolute;
+  top:50%;
+  right: 0%;
+  transform: translate( -20%,-50%);
+}
+.VideoName{
+  padding: auto;
+  position: absolute;
+  top:50%;
+  transform: translate( 10%,-50%);
+}
+
+.VideoView{
+  width: 100%;
+  height: 95vh;
+}

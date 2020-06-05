@@ -1,0 +1,16 @@
+
+/*ヘッダー下部罫線*/
+.Boarder{
+    margin: 0%;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.BreadCrumb{
+    position: absolute;
+    bottom: 3px;
+    padding-left: 3vw;
+}
+

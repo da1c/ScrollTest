@@ -1,0 +1,67 @@
+.breadcrumb {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .breadcrumb li {
+    display: inline;
+    list-style: none;
+    font-weight: bold;
+  }
+  
+  .breadcrumb li:after {
+    content: '>';
+    padding: 0 0.2em;
+    color: #555;
+  }
+  
+  .breadcrumb li:last-child:after {
+    content: '';
+  }
+  
+  .breadcrumb_prev {
+    text-decoration: underline;
+    text-decoration-color: coral;
+    color: coral;
+  }
+
+  .breadcrumb_current{
+    color: black;
+    text-decoration: none;
+  }
+
+
+  .BreadCrumb div:last-child:after {
+    content: '';
+  }
+
+  /*現在位置*/
+  .BreadCrumbCurrent div{
+    color: black;
+    text-decoration: none;
+  }
+
+  .BreadCrumbCurrent:after{
+    content: '';
+  }
+  .BreadCrumbPrev:after{
+    content: '>';
+    padding: 0 0.2em;
+    color: #555;
+    text-decoration: none;
+
+  }
+  .BreadCrumbPrev div{
+    text-decoration: underline;
+    text-decoration-color: coral;
+    color: coral;
+  }
+
+
+
+  .BreadCrumb div {
+    display: inline;
+    list-style: none;
+    font-weight: bold;
+  }
