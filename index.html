@@ -20,15 +20,12 @@
   <div onclick="Disp()" class="DispButton">表示</div>
   <div onclick="Delete()" class="DeleteButton">削除</div>
   </div>
-  <div id="MenuArea" class="MenuArea">
-    <!--他メニューの親-->
-    <div class="MenuParent"></div>
-    <div class="HolizonScrollParent">
-      <div class="ScrollNav">
-        <ul id="ScrollParent"></ul>
-      </div>
-    </div>
-  </div>
+  <div >
+    <div id="innerHeight"></div>
+    <div id="ScreeHeight"></div>
+    <div id="ScreenAvailHeight"></div>
+    <div id="outerHeight"></div>
+    <div id="clientHeight"></div>
   </div>
 
   <script>
@@ -49,6 +46,23 @@
       $("#ScrollParent").empty();
       $(".HolizonScrollParent").hide();
     }
+
+    function update(){
+      $("#innerHeight").html( 'innerHeight:'+ window.innerHeight );
+      
+      $("#ScreeHeight").html( 'ScreeHeight:'+ screen.height );
+      
+      $("#ScreenAvailHeight").html( 'availHeight:'+ screen.availHeight );
+      $("#outerHeight").html( 'outerHeight:'+ window.outerHeight );
+      $("#clientHeight").html( 'clientHeight:'+ document.documentElement.clientHeight );
+    }
+    $(window).resize(function () {
+      update();
+    });
+
+    $(function(){
+      update();
+    });
 
   </script>
 </body>
